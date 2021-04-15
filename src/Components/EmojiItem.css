@@ -1,0 +1,16 @@
+li {
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 40px;
+  background-color: white;
+  box-shadow: 3px 5px 5px gray;
+  transition: 0.2s;
+}
+
+li:hover {
+  background-color: greenyellow;
+  cursor: copy;
+}
