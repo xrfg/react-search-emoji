@@ -18,8 +18,12 @@ class App extends React.Component {
       let inputValue = e.target.value.toLowerCase();
 
       // if u return true it will return that item on the array
-      if (item.title.toLowerCase().includes(inputValue)) return true;
-      if (item.keywords.toLowerCase().includes(inputValue)) return true;
+      if (item.title.toLowerCase().includes(inputValue)) {
+        return true;
+      }
+      if (item.keywords.toLowerCase().includes(inputValue)) {
+        return true;
+      }
 
       // if not --> return false
       return false;
@@ -32,7 +36,7 @@ class App extends React.Component {
   };
 
   render() {
-    console.log("render in App", this.state.searchValue);
+    // console.log("render in App", this.state.searchValue);
     return (
       <div className="App" style={{ backgroundColor: "#EAEDF0" }}>
         <Header />
