@@ -1,6 +1,5 @@
 import React from "react";
 import EmojiContainer from "./Components/EmojiContainer";
-// import { render } from "react-dom";
 import Header from "./Components/Header";
 import emojiList from "./json/emoji.json";
 
@@ -14,7 +13,7 @@ class App extends React.Component {
     // console.log(e.target.value, "user is typing");
     // store input data into state
 
-    let filteredEmojis = this.state.emojiData.filter((item) => {
+    let filteredEmojis = emojiList.filter((item) => {
       let inputValue = e.target.value.toLowerCase();
 
       // if u return true it will return that item on the array
@@ -36,7 +35,7 @@ class App extends React.Component {
   };
 
   render() {
-    // console.log("render in App", this.state.searchValue);
+    console.log("render in App", this.state.searchValue);
     return (
       <div className="App" style={{ backgroundColor: "#EAEDF0" }}>
         <Header />
